@@ -1,33 +1,778 @@
-.App {
-  text-align: center;
+/**
+
+ * CSS Style for CrafterSama.com
+
+ **/
+ html {
+	scroll-behavior: smooth;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+a {
+    color: #f90;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    color: #fff;
+    display: block;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px 0px 3px #212121;
+    z-index: 3;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin-top: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2, h3 {
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    z-index: 3;
+    margin: 0;
+}
+
+h4 {
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    z-index: 3;
+    margin: 0;
+}
+
+
+small {
+    font-weight: 700;
+    text-shadow: 0px 0px 2px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+.img-thumbnail {
+    box-shadow: 0px 2px 3px;
+    max-width: 150px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+article h2 {
+    color: #fff;
+    font-weight: normal;
+}
+
+/* principal container */
+
+.container {
+    margin: 0 auto;
+    max-width: 1336px;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 85%;
+    }
   }
+
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
+
+/* /end principal container */
+
+/* navbar */
+
+nav {
+    background: rgb(48, 61, 70);
+    color: #FFF;
+    line-height: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
+nav ul{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 0.8em 0 0.8em;
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+.cs-logo {
+    padding: 0px 7px;
+    color: #fff;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+}
+
+.menu-toggle,
+.navbar-logo,
+.navbar-menu-items {
+    display: inline-block;
+    float: left;
+}
+
+.menu-toggle {
+    background-color: #343a40;
+    color: #dedede;
+    border: 1px solid #656b71;
+    border-radius: 4px;
+    margin: 7px 0.8em 7px 0.8em;
+    padding: 0px 13px;
+    vertical-align: middle;
+}
+
+.navbar {
+    margin: 0px;
+    min-height: 50px;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar-logo {
+    margin: 7px 7px;
+}
+
+.navbar-menu {
+    border-bottom: 1px solid #3c434a;
+    box-shadow: 0px 1px 10px #3c434a;
+}
+
+.navbar-menu-items {
+    margin: 4px;
+}
+
+.navbar-menu a, .navbar-menu a:hover, .navbar-menu a:focus, .navbar-menu a:visited  {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* /end-navbar */
+
+/* Header Hero */
+
+header h5, header small {
+    font-weight: normal;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    padding: 4rem 0 2rem;
+    margin-top: 50px;
+    position: relative;
+    background: url(./static/images/bg.jpg);
+    z-index: 1;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle-bg-one {
+    width: 120%;
+    height: 40rem;
+    transform: rotate(-6deg);
+    position: absolute;
+    right: -8%;
+    top: 24rem;
+    background-color: rgba(100,100,100,.7);
+}
+
+.middle-bg-two {
+    width: 120%;
+    height: 100%;
+    background-color: rgba(48, 61, 70, .9);
+    transform: rotate(5deg);
+    position: absolute;
+    left: -15%;
+    top: 23rem;
+}
+
+.header-body {
+    border-radius: 0.5em;
+    padding: 100px 30px 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.about-picture {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.picture-profile {
+    margin: 0 auto;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 4px solid rgba(48, 61, 70, .9);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    box-shadow: 0px 0px 23px #333;
+
+}
+
+.subtitle-hero p {
+    color: #fff;
+}
+
+.subtitle-hero {
+    background-color: #3C4D58;
+    border-radius: 1rem;
+    width: 95%;
+    max-width: 720px;
+    padding: 1.8rem 6rem 2rem 4rem;
+    box-sizing: border-box;
+    margin: 50px auto 15px;
+    position: relative;
+    box-shadow: 0px 0px 23px #333;
+}
+
+.subtitle-hero .subtitle-rocket {
+    top: -2rem;
+    position: absolute;
+    right: 1.6rem;
+}
+
+.subtitle-rocket img {
+    position: relative;
+    height: 10rem;
+}
+
+h2.subtitle {
+    font-weight: 700;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .subtitle-hero .subtitle-rocket {
+        right: -1rem;
+        top: -3rem;
+    }
+    .subtitle-rocket img {
+        position: relative;
+        height: 7rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .subtitle-hero {
+        padding: 1.8rem 1.5rem 2rem 2rem;
+    }
+}
+
+/* /end-header Hero */
+
+/* Social Contact */
+
+.social-box {
+    background-color: #2B343F;
+    background-image: url(/static/media/cloud.43bd9f4f.svg);
+    background-size: 110%;
+    padding: 60px 0 220px;
+    background-position: center;
+}
+
+.social-contact {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+@media (min-width: 1280px) and (max-width: 1570px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1279px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 719px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+.social-contact li {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.social-contact li > .fas,
+.social-contact li > .fab {
+    font-size: 20px;
+}
+.social-contact li > a, .social-contact li > a:hover, .social-contact li > a:focus, .social-contact li > a:visited {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+/* /end Social Contact */
+
+/* Work Experience */
+
+.exp-skills-columns {
+    display: grid;
+    grid-template-columns: 700px auto;
+}
+
+.experience-line {
+    position: absolute;
+    width: 325px;
+    height: 93%;
+    border-right: 2px solid #19c;
+}
+
+.experience-section {
+    background-color: #fff;
+    padding: 50px 15px;
+}
+
+.experiences {
+    position: relative;
+}
+
+.experience-box {
+    width: 300px;
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px #ccc;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.item-box {
+    position: relative;
+}
+
+.experience-dot {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #19c;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    top: 45%;
+    left: 44.5%;
+}
+
+.experience-box.box-1 ~ .experience-dot {
+}
+
+.experience-box.box-2 ~ .experience-dot {
+}
+
+.experience-box.box-2, .experience-box.box-4 {
+    left: 50%;
+}
+
+.exp-position {
+    color: #19c;
+    font-weight: bold;
+}
+
+.exp-company {
+    color: #2B343F;
+    font-weight: bold;
+}
+
+.exp-time, .exp-time span, .exp-place, .exp-place span {
+    color: #19c;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.experience-modal {
+    display: none;
+}
+
+/* /end Work Experience */
+
+/* Technical Skills */
+
+
+.skills-title, .experience-title {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.tech-skills-section {
+    background-color: #fff;
+}
+
+.skills {
+    padding: 0 15px;
+}
+
+.skills-title, .skill-title, .experience-title {
+    color: #19c;
+    font-weight: bold;
+}
+
+.skill-description {
+    font-size: 16px;
+}
+
+/* /end Technical Skills */
+
+/* SoftSkill */
+
+.soft-skill-box {
+}
+
+.soft-skills-title {
+    color: #19c;
+    font-weight: bold;
+}
+
+.soft-skill {
+    background-color: #19c;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 10px;
+    margin: 0 7px 7px auto;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+/* /end SoftSkill */
+
+/* footer */
+
+footer {
+    background: rgba(21,21,21,0.7);
+    bottom: 0;
+    color: #FFF;
+    padding: 0.33em;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.year {
+    width: 14px;
+    height: 13px;
+    background-color: #ff9900;
+    margin-right: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 0.5px 3px #cccccc;
+}
+
+/* /end-footer */
+
+/* animations */
+
+@keyframes floatingRocket {
+    0% {
+        -webkit-transform: translate(-3%, 3%);
+        transform: translate(-3%, 3%);
+    }
+    50% {
+        -webkit-transform: translate(3%, -3%);
+        transform: translate(3%, -3%);
+    }
+    100% {
+        -webkit-transform: translate(-3%, 3%);
+        transform: translate(-3%, 3%);
+    }
+}
+
+.floatingRocket {
+    animation: floatingRocket;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft;
+    animation-duration: 0.5s;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fadeInRight {
+    animation: fadeInRight;
+    animation-duration: 0.5s;
+}
+@keyframes fadeInLeftLarge {
+    from {
+        opacity: 0;
+        transform: translateX(-100%) rotate(5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%) rotate(5deg);
+    }
+}
+
+.fadeInLeftLarge {
+    animation: fadeInLeftLarge;
+    animation-duration: 0.5s;
+}
+@keyframes fadeInRightLarge {
+    from {
+        opacity: 0;
+        transform: translateX(100%) rotate(-6deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%) rotate(-6deg);
+    }
+}
+
+.fadeInRightLarge {
+    animation: fadeInRightLarge;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.fadeInDown {
+    animation: fadeInDown;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInDownRotate {
+    from {
+        opacity: 0;
+        transform: translate(-15%, 30%) rotate(18deg);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+.fadeInDownRotate {
+    animation: fadeInDownRotate;
+    animation-duration: 0.5s;
+}
+
+@keyframes float {
+    0% {
+    transform: rotateY(-10deg);
+    }
+    50% {
+        transform: rotateY(10deg);
+    }
+    100% {
+        transform: rotateY(-10deg);
+    }
+}
+
+.float {
+    animation: float;
+    animation-duration: 0.5s;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  .animated.delay-600ms {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+  }
+
+  .animated.delay-800ms {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+  }
+
+  .animated.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .animated.delay-1dot2s {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+
+  .animated.delay-1dot4s {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+
+  .animated.delay-1dot6s {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+
+  .animated.delay-1dot8s {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+  }
+
+  .animated.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+  .animated.delay-3s {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+
+  .animated.delay-4s {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+
+  .animated.delay-5s {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+
+  .animated.fast {
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+  }
+
+  .animated.faster {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+  }
+
+  .animated.medium {
+    -webkit-animation-duration: 1300ms;
+    animation-duration: 1300ms;
+  }
+
+  .animated.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+
+  .animated.slower {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+
+  .animated.slow-motion {
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+  }
+
+  @media (prefers-reduced-motion) {
+    .animated {
+      -webkit-animation: unset !important;
+      animation: unset !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+      animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+  }
+
+  /* /end-animations */
