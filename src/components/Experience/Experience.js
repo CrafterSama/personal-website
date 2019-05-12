@@ -15,7 +15,7 @@ class Experience extends Component {
             country: "Venezuela",
             state: "Zulia",
             city: "Ciudad Ojeda",
-            tasks: "I Develop Web Apps, Web Systems and SAAS products with technologies like: HTML5, CSS3, Javascript, AngularJS, Angular2+, ReactJS, Laravel, NodeJS, ExpressJS, Bootstrap, MaterialUI, MeteorJS and I program all the Task for the team with Attlasian Jira Software.",
+            tasks: "I develope web apps, web systems and SaaS products with technologies like: HTML5, CSS3, Javascript, AngularJS, Angular2+, ReactJS, Laravel, NodeJS, ExpressJS, Bootstrap, MaterialUI, MeteorJS. I also program and manage tasks for the team with Athlasian Jira Software.",
             uuid: ""
         },
         {
@@ -28,7 +28,7 @@ class Experience extends Component {
             country: "Venezuela",
             state: "",
             city: "",
-            tasks: "I work like a Freelance mostly as a Fullstack Developer, Making Web App of E-commerce, Delivery Systems, Hospital Web Software and Website using always new technologies always choose the better option to develop the client requirements. Normally I always use HTML5, CSS3, Javascript, PHP, Python, Laravel, ReactJS with or without Redux, Django, NodeJS, ExpressJS and many layouts frameworks systems, including the use of MaterialUI for ReactJS, I can handle the Terminal and BASH Language, I have knowledge and always use git, I handle Package Managers like Gulp, Yarn, NPM, Composer, Pip, etc., and also I can handle Linux, Mac and Windows Platforms.",
+            tasks: "I work freelance mostly as a fullstack developer, making web app for e-commerce, delivery systems, hospital web software and website using always new technologies, choosing the better option to develope according to the client requirements. Normally I always use HTML5, CSS3, Javascript, PHP, Python, Laravel, ReactJS with or without Redux, Django, NodeJS, ExpressJS and many layouts frameworks systems, including the use of MaterialUI for ReactJS, I can handle the Terminal and BASH Language, I have knowledge and always use git, I handle package managers like Gulp, Yarn, NPM, Composer, Pip and alike. I can also handle Linux, Mac and Windows platforms.",
             uuid: ""
         },
         {
@@ -41,7 +41,7 @@ class Experience extends Component {
             country: "Mexico",
             state: "Mexico",
             city: "DF",
-            tasks: "My work here has based in made layouts with HTML5, CSS3 and Javascript, I have used other technologies like: D3.JS, Bootstrap, Materialize CSS, Bulma CSS, and ReactJS.",
+            tasks: "My job here was based in building layouts with HTML5, CSS3 and Javascript. I have used other technologies like D3.JS, Bootstrap, Materialize CSS, Bulma CSS, and ReactJS.",
             uuid: ""
         },
         {
@@ -54,7 +54,7 @@ class Experience extends Component {
             country: "Venezuela",
             state: "Zulia",
             city: "Maracaibo",
-            tasks: "I was work here like a User Support and Web Developer, I has made a Web System to automate some task in some hospitals and drugstores, this Web System was made with HTML5, CSS3, JQuery, Javascript, PHP and SQL.",
+            tasks: "Working as a user support in hardware and systems, I gave support to systems based on HTML5, CSS3, Javascript, PHP, Oracle and MSSQL, and DevOps tasks with Microsoft Technologies",
             uuid: ""
         },
         {

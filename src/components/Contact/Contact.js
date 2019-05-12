@@ -40,6 +40,7 @@ class Contact extends Component {
         return (
             <section id="contact-me" className="contact-section">
                 <SocialContact {...socialProps} />
+                <div className="bottom-cloud"></div>
             </section>
         )
     }

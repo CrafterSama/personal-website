@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import rocket from '../../static/images/rocket.png';
+import rocketSVG from '../../static/images/rocket.svg';
 import avatar from '../../static/images/new-avatar.jpg';
+
+import TopCloud from '../common/Clouds/TopCloud';
 
 class Hero extends Component {
     constructor(props) {
@@ -14,8 +16,7 @@ class Hero extends Component {
             function () {
                 this.headerBgOne.current.classList.remove('fadeInRightLarge');
                 this.headerBgTwo.current.classList.remove('fadeInLeftLarge');
-            }
-                .bind(this),
+            }.bind(this),
             1200
         );
     }
@@ -32,12 +33,12 @@ class Hero extends Component {
                 <div className="middle-bg-one animated fadeInRightLarge" ref={this.headerBgOne}></div>
                 <div className="middle-bg-two animated fadeInLeftLarge" ref={this.headerBgTwo}></div>
                 <div className="header-body text-center">
-                    <h1 className="header-title animated fadeInUp delay-1s">
-                        {hero.name}
-                    </h1>
                     <figure className="about-picture animated fadeInUp delay-800ms">
                         <img className="picture-profile" src={avatar} alt="Julmer Olivero" />
                     </figure>
+                    <h1 className="header-title animated fadeInUp delay-1s">
+                        {hero.name}
+                    </h1>
                     <div className="hero-body">
                         <div className="floating-description animated fadeInDown">
                             <div className="subtitle-hero animated float slow-motion infinite">
@@ -45,11 +46,12 @@ class Hero extends Component {
                                 <h4 className="small animated fadeInUp delay-800ms">{hero.slogan}</h4>
                                 <p className="animated fadeInDown delay-1s">{hero.description}</p>
                                 <div className="subtitle-rocket animated fadeInDownRotate delay-1s">
-                                    <img className="animated slower infinite floatingRocket" src={rocket} alt="Rocket" />
+                                    <img className="animated slower infinite floatingRocket" src={rocketSVG} alt="Rocket" />
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <TopCloud />
                 </div>
             </header>
         )
