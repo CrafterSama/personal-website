@@ -11,7 +11,7 @@ class Skills extends Component {
         },
         {
             name: "Languages",
-            description: "Javascript, PHP, Pyhon, HTML5, CSS3, SQL, NoSQL, Bash"
+            description: "Javascript, PHP, Python, HTML5, CSS3, SQL, NoSQL, Bash"
         },
         {
             name: "Language Processing",

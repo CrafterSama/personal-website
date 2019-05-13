@@ -15,7 +15,7 @@ class Experience extends Component {
             country: "Venezuela",
             state: "Zulia",
             city: "Ciudad Ojeda",
-            tasks: "I develope web apps, web systems and SaaS products with technologies like: HTML5, CSS3, Javascript, AngularJS, Angular2+, ReactJS, Laravel, NodeJS, ExpressJS, Bootstrap, MaterialUI, MeteorJS. I also program and manage tasks for the team with Athlasian Jira Software.",
+            tasks: "I develop web apps, web systems and SaaS products with technologies like: HTML5, CSS3, Javascript, AngularJS, Angular2+, ReactJS, Laravel, NodeJS, ExpressJS, Bootstrap, MaterialUI, MeteorJS. I also program and manage tasks for the team with Athlasian Jira Software.",
             uuid: ""
         },
         {

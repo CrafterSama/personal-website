@@ -4,9 +4,9 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-menu fixed-top bg-dark">
-                <a className="navbar-logo cs-logo animated delay-600ms fadeInUp" href="/">CS</a>
                 <div className="navbar-menu-collapse">
                     <ul className="navbar-menu-items">
+                        <a className="navbar-logo navbar-item cs-logo animated delay-600ms fadeInUp" href="/">CS</a>
                         <li className="navbar-item animated delay-800ms fadeInUp">
                             <a className="navbar-link disabled" href="#about-me">About</a>
                         </li>

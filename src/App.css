@@ -8,7 +8,7 @@
 }
 
 a {
-    color: #f90;
+    color: #19c;
     text-decoration: none;
 }
 
@@ -85,20 +85,7 @@ article h2 {
 .container {
     margin: 0 auto;
     max-width: 1336px;
-    width: 90%;
-  }
-
-  @media only screen and (min-width: 601px) {
-    .container {
-      width: 85%;
-    }
-  }
-
-  @media only screen and (min-width: 993px) {
-    .container {
-      width: 70%;
-    }
-  }
+}
 
 /* /end principal container */
 
@@ -138,7 +125,7 @@ nav ul li{
 .navbar-logo,
 .navbar-menu-items {
     display: inline-block;
-    float: left;
+
 }
 
 .menu-toggle {
@@ -162,7 +149,7 @@ nav ul li{
 }
 
 .navbar-logo {
-    margin: 7px 7px;
+    margin: 4px;
 }
 
 .navbar-menu {
@@ -202,13 +189,13 @@ header {
 }
 
 .middle-bg-one {
-    width: 120%;
+    width: 140%;
     height: 100%;
     background-color: rgba(78, 94, 105,.5);
     -webkit-transform: rotate(-6deg);
     transform: rotate(-6deg);
     position: absolute;
-    right: -8%;
+    right: -25%;
     top: 15rem;
 }
 
@@ -219,7 +206,7 @@ header {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
     position: absolute;
-    left: -15%;
+    left: -20%;
     top: 15rem;
 }
 
@@ -278,23 +265,6 @@ h2.subtitle {
     font-weight: 700;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
-    .subtitle-hero .subtitle-rocket {
-        right: -1rem;
-        top: -3rem;
-    }
-    .subtitle-rocket img {
-        position: relative;
-        height: 7rem;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-    .subtitle-hero {
-        padding: 1.8rem 1.5rem 2rem 2rem;
-    }
-}
-
 /* /end-header Hero */
 
 /* Clouds */
@@ -303,6 +273,7 @@ h2.subtitle {
     background-image: url(./static/images/dark-cloud.svg);
     background-size: 110%;
     background-position: center;
+    background-repeat: no-repeat;
     background-color: rgba(48, 61, 70, 0);
     min-height: 287px;
     z-index: 101;
@@ -314,10 +285,11 @@ h2.subtitle {
 }
 
 .bottom-cloud {
-    background-color: #303d46;
     background-image: url(./static/images/cloud.svg);
     background-size: 111%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #303d46;
     min-height: 240px;
 }
 
@@ -338,36 +310,6 @@ h2.subtitle {
     grid-gap: 15px;
 }
 
-@media (min-width: 1280px) and (max-width: 1570px) {
-    .social-contact {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 10px;
-    }
-}
-
-@media (min-width: 720px) and (max-width: 1279px) {
-    .social-contact {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 10px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 719px) {
-    .social-contact {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap: 15px;
-    }
-}
-
 .social-contact li {
     margin-right: 5px;
     color: #fff;
@@ -377,6 +319,7 @@ h2.subtitle {
 .social-contact li > .fab {
     font-size: 20px;
 }
+
 .social-contact li > a, .social-contact li > a:hover, .social-contact li > a:focus, .social-contact li > a:visited {
     color: #fff;
     font-size: 14px;
@@ -390,7 +333,7 @@ h2.subtitle {
 
 .exp-skills-columns {
     display: grid;
-    grid-template-columns: 700px auto;
+    grid-template-columns: 700px minmax(300px, 1fr);
 }
 
 .experience-line {
@@ -451,7 +394,7 @@ h2.subtitle {
 }
 
 .exp-company {
-    color: #2B343F;
+    color: #046;
     font-weight: bold;
 }
 
@@ -484,13 +427,22 @@ h2.subtitle {
     padding: 0 15px;
 }
 
-.skills-title, .skill-title, .experience-title {
+.soft-skills-title,
+.skill-title,
+.skills-title,
+.experience-title {
     color: #19c;
     font-weight: bold;
 }
 
+.skills-title,
+.experience-title {
+    text-transform: uppercase;
+}
+
 .skill-description {
     font-size: 16px;
+    color: #046;
 }
 
 /* /end Technical Skills */
@@ -498,11 +450,6 @@ h2.subtitle {
 /* SoftSkill */
 
 .soft-skill-box {
-}
-
-.soft-skills-title {
-    color: #19c;
-    font-weight: bold;
 }
 
 .soft-skill {
@@ -543,6 +490,185 @@ footer p {
 }
 
 /* /end-footer */
+
+/* Responsive Design */
+
+
+@media (min-width: 1280px) and (max-width: 1570px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1279px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+
+@media (min-width: 1180px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 600px;
+    }
+    .exp-skills-columns {
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .subtitle-rocket img {
+        height: 25rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 780px) {
+    .top-cloud {
+        bottom: -120px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .top-cloud {
+        bottom: -170px;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 767px) {
+    .subtitle-hero {
+        padding: 1.8rem 1.5rem 2rem 2rem;
+    }
+    .exp-skills-columns {
+        display: grid;
+        grid-template-columns: 630px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .experiences {
+        margin: 0 auto;
+    }
+    .experience-line {
+        width: 0px;
+        left: 48.5%
+    }
+    .experience-dot {
+        left: 44.5%;
+    }
+    .experience-box.box-1, .experience-box.box-3, .experience-box.box-5 {
+        left: -55%;
+    }
+    .experience-box.box-2, .experience-box.box-4 {
+        left: 55%;
+    }
+}
+
+@media (max-width: 767px) {
+    .subtitle-rocket img {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 719px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    .social-contact {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 629px) {
+    .subtitle-hero {
+        padding: 1.8rem 1.5rem 2rem 2rem;
+    }
+    .exp-skills-columns {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .experiences {
+        margin: 0 auto;
+    }
+    .experience-line {
+        width: 0px;
+        left: 102.5%;
+    }
+    .experience-dot {
+        left: 98.5%;
+    }
+    .experience-box.box-2 ~ .experience-dot, .experience-box.box-4 ~ .experience-dot {
+        border-radius: 50% 50% 50% 3px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .experience-box.box-2, .experience-box.box-4 {
+        left: 0%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .subtitle-hero .subtitle-rocket {
+        right: -1rem;
+        top: -3rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 417px) {
+    .header-body {
+        padding: 100px 0 15px;
+    }
+    .header-title {
+        font-size: 34px;
+    }
+    .subtitle-hero {
+        padding: 1.5rem;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    nav ul li {
+        margin: 0 0.3em 0 0.3em;
+    }
+}
+
+/* /end Responsive Design */
+
 
 /* animations */
 
